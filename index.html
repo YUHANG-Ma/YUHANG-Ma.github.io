@@ -1,450 +1,323 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class=" js " lang="en">
 
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8"> <!-- begin SEO -->
+    <title> Yuhang Ma</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Yuhang Ma">
+    <meta property="og:title" content="Yuhang Ma">
+    <link rel="canonical" href="https://yuhang-ma.github.io/">
+    <meta property="og:url" content="https://yuhang-ma.github.io/">
+    <meta property="og:description" content="About me">
+    <script async="" src="home/analytics.js"></script>
+    <script
+        type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Person", "name" : "Yuhang Ma", "url" : "https://yuhang-ma.github.io", "sameAs" : null } </script>
+    <!-- end SEO -->
+    <link href="https://yuhang-ma.github.io/feed.xml" type="application/atom+xml" rel="alternate"
+        title="Yuhang Ma Feed"> <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; </script>
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="home/main.css">
+    <meta http-equiv="cleartype" content="on"> <!-- start custom head snippets -->
+    <link rel="apple-touch-icon" sizes="57x57"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="60x60"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://yuhang-ma.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+    <link rel="icon" type="image/png" href="https://yuhang-ma.github.io/images/favicon-32x32.png?v=M44lzPylqQ"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="https://yuhang-ma.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ"
+        sizes="192x192">
+    <link rel="icon" type="image/png" href="https://yuhang-ma.github.io/images/favicon-96x96.png?v=M44lzPylqQ"
+        sizes="96x96">
+    <link rel="icon" type="image/png" href="https://yuhang-ma.github.io/images/favicon-16x16.png?v=M44lzPylqQ"
+        sizes="16x16">
+    <link rel="manifest" href="https://yuhang-ma.github.io/images/manifest.json?v=M44lzPylqQ">
+    <link rel="mask-icon" href="https://yuhang-ma.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+    <link rel="shortcut icon" href="https://yuhang-ma.github.io/images/favicon.ico?v=M44lzPylqQ">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="https://yuhang-ma.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+    <meta name="msapplication-config" content="https://yuhang-ma.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="home/academicons-1.9.2/css/academicons.min.css"/>
+    <link rel="stylesheet" href="home/font-awesome-4.7.0/css/font-awesome.min.css"> <!-- end custom head snippets -->
+    <style id="fit-vids-style">
+        .fluid-width-video-wrapper {
+            width: 100%;
+            position: relative;
+            padding: 0;
+        }
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.5,shrink-to-fit=no">
-
-  <meta name="description" content="Yuhang Ma is currently an AI researcher at Bytedance.">
-  <meta name="author" content="Yuhang Ma">
-  <meta name="keywords" content="Yuhang Ma, Generative AI, Text-to-image Generation, Multimodule Pretraining, AIGC, Conditional Image Generation, UCL">
-  <title>Yuhang Ma</title>
-  <!-- Google Analytics -->
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-104092499-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <!-- bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- font-awesome -->
-  <link href="css/fontawesome.min.css" rel="stylesheet">
-  <link href="css/solid.min.css" rel="stylesheet">
-  <link href="css/brands.min.css" rel="stylesheet">
-
-  <!-- academicons -->
-  <link href="css/academicons.min.css" rel="stylesheet">
-
-  <!-- Style CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  
-  
-
-
+        .fluid-width-video-wrapper iframe,
+        .fluid-width-video-wrapper object,
+        .fluid-width-video-wrapper embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
-
-  <div class="container-fluid">
-
-    <!-- Home -->
-    <div class="sec-wrapper home-wrapper" id="home">
-      <div class="row align-items-center">
-        <div class="col-sm-auto col-wrapper">
-          <div id="profile-credit" class="picture">
-            <img id="profile" src="assets/profile/selfimage.jpg" class="img-responsive" alt="[Yuhang :)]"/>
-          </div>
-        </div>
-        <div class="col-sm col-wrapper">
-          <div class="description">
-            <div class="name">Yuhang Ma</div>
-            <div>AI researcher at Bytedance</div>
-            <div class="education">
-              Education: <a href='https://www.ucl.ac.uk/computer-science/'>UCL(2020-2021)</a> 
-              ---> <a href='https://www-en.hnu.edu.cn/info/1095/2093.htm'>Hunan University(2016-2020)</a>
+    <!--[if lt IE 9]><div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav"> <button class="hidden" count="0">
+                        <div class="navicon"></div>
+                    </button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a
+                                href="https://yuhang-ma.github.io/">Yuhang Ma</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
             </div>
-            <div>Work Email: mayuhang.26942 (at) bytedance.com </div>
-            <div>Personal Email: yuhang_ma0307 (at) 163.com / astronaut0307 (at) gmail.com</div>
-            <div class="social">
-              <a href="https://scholar.google.com/citations?hl=zh-CN&user=0I5QGngAAAAJ">Google Scholar</a> /
-              <!-- <a href="https://dblp.org/pers/hd/m/Ma_0002:Pingchuan">DBLP</a> / -->
-              <a href="https://github.com/YUHANG-Ma">GitHub</a> 
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <!-- Home -->
-    <div class="sec-wrapper bio-wrapper" id="bio">
-      <div class="row section-head">
-        <div class="col col-wrapper">
-          <div class="section-title">Research Interests</div>
+    <div id="main" role="main">
+        <div class="sidebar sticky">
+            <div itemscope="" itemtype="http://schema.org/Person">
+                <div class="author__avatar"> <img src="assets/profile/selfimage.jpg" class="author__avatar"
+                        alt="Yuhang Ma"></div>
+                <div class="author__content">
+                    <h3 class="author__name">Yuhang Ma</h3>
+                    <p class="author__bio">AI researcher at Bytedance
+                    </p>
+                </div>
+                <div class="author__urls-wrapper"> <button class="btn btn--inverse">Follow</button>
+                    <ul class="author__urls social-icons">
+                        <!-- <li><i class="fa fa-fw fa-map-marker" aria-hidden="true">
+                        </i> Shanghai, China</li> -->
+                        <li><a href="https://github.com/YUHANG-Ma"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+                        <li><a href="https://scholar.google.com/citations?hl=zh-CN&user=0I5QGngAAAAJ"><i class="ai ai-google-scholar-square ai-fw"></i> Google Scholar</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row section-item">
-        <div class="col col-wrapper">
-          AIGC, Multimodule Pretraining including Text-to-image, LLM and MLLM pretrained model, Conditioned Text-to-image Generation especially focused on IP Consistency, Multiagent System
-        </div>
-      </div>
+        <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="headline" content="">
+            <meta itemprop="description" content="About me">
+            <div class="page__inner-wrap">
+                <header>
+                    <h1 class="page__title" itemprop="headline"></h1>
+                </header>
+                <section class="page__content" itemprop="text">
+                    <h2 id="Contact">Contact</h2>
+                    <p>
+                        <div>Education: <a href='https://www.ucl.ac.uk/computer-science/'>UCL(2020-2021)</a> 
+                        ---> <a href='https://www-en.hnu.edu.cn/info/1095/2093.htm'>Hunan University(2016-2020)</a></div>
+                        <div>Work Email: mayuhang.26942 (at) bytedance.com </div>
+                        <div>Personal Email: yuhang_ma0307 (at) 163.com / astronaut0307 (at) gmail.com</div>
+                    </p>
+                    <h2 id="research interest">Research Interests</h2>
+                    <p>
+                        AIGC, Multimodule Pretraining including Text-to-image, LLM and MLLM pretrained model and Multiagent System
+                    </p>
+                    <h2 id="about-me">About me</h2>
+                    <p>
+                        Yuhang Ma (马宇航) serves as an AI researcher at Bytedance, focusing on <b>Image Generation and Video Understanding</b>. Previously, she worked at Fuxi AI Lab, NetEase Inc.(2022-2025), responsible for Danqing text-to-image generation model pretraining (Wechat mini app "丹青约"), 
+                        Danqing VLM and LLM model fine-tuning and IP Consistency research. 
+                        She obtained her master degree from <a href="https://www.ucl.ac.uk/computer-science/">University College London</a> 
+                        and bachelor degree from <a href="https://www-en.hnu.edu.cn/info/1095/2093.htm">Hunan University</a>. She studied at <a href="https://www.nus.edu.sg/"> 
+                          National University of Singapore</a> as a visit student in 2019 Winnter semester. 
+                    </p>
+                    
+
+                    <h2 id="publications">Publications</h2>
+                    <p>* indicates equal contribution, † indicates project leader, ✉ indicates advising</p>
+
+                    <dl style="min-height:125px; display: flex; align-items: center;">
+                        <dt style="display: flex; align-items: center; justify-content: center; width: 200px;">
+                            <img src="assets/hpsv3/teaser.png" width="200" height="160" style="margin: 0 10px;">
+                        </dt>
+                        <div style="flex: 1; padding-left: 15px;">
+                            <dt>
+                                HPSv3: Towards Wide-Spectrum Human Preference Score
+                            </dt>
+                            <dd>
+                                <strong><u>Yuhang Ma*</u></strong>, <strong><u>Yunhao Shui*</u></strong>, Xiaoshi Wu, Keqiang Sun<sup>✉</sup>, Hongsheng Li<sup>✉</sup>
+                            </dd>
+                            <dd>ICCV 2025 </dd>
+                            <dd>
+                                <a href="https://mizzenai.github.io/HPSv3.project/">[ProjectPage]</a> /
+                                <a href="https://arxiv.org/abs/2508.03789">[Paper]</a> /
+                                <a href="https://github.com/MizzenAI/HPSv3">[Code]</a> /
+                                <a href="https://huggingface.co/MizzenAI/HPSv3">[Model]</a> /
+                                <a href="https://huggingface.co/datasets/MizzenAI/HPDv3">[Dataset]</a>
+                            </dd>
+                        </div>
+                    </dl>
+                    <hr>
+
+
+                    <dl style="min-height:125px; display: flex; align-items: center;">
+                        <dt style="display: flex; align-items: center; justify-content: center; width: 200px;">
+                            <img src="assets/comfygpt/intro.jpg" width="200" height="160" style="margin: 0 10px;">
+                        </dt>
+                        <div style="flex: 1; padding-left: 15px;">
+                            <dt>
+                                ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation
+                            </dt>
+                            <dd>
+                                Oucheng Huang*, <strong><u>Yuhang Ma*</u></strong><sup>†</sup>, Zeng Zhao<sup>✉</sup>, Mingrui Wu, Jiayi Ji, Rongsheng Zhang, Zhipeng Hu, Xiaoshuai Sun, Rongrong Ji<sup>✉</sup>.
+                            </dd>
+                            <dd>arXiv 2025 </dd>
+                            <dd>
+                                <a href="https://comfygpt.github.io/">[ProjectPage]</a> /
+                                <a href="https://arxiv.org/abs/2503.17671">[Paper]</a> /
+                                <a href="https://github.com/comfygpt/comfygpt">[Code]</a> 
+                            </dd>
+                        </div>
+                    </dl>
+                    <hr>
+
+                    <dl style="min-height:125px; display: flex; align-items: center;">
+                        <dt style="display: flex; align-items: center; justify-content: center; width: 200px;">
+                            <img src="assets/storynizor/double-result.jpg" width="200" height="160" style="margin: 0 10px;">
+                        </dt>
+                        <div style="flex: 1; padding-left: 15px;">
+                            <dt>
+                                
+                                Storynizor: Consistent Story Generation via Inter-Frame Synchronized and Shuffled ID Injection
+                                
+                            </dt>
+                            <dd>
+                                <strong><u>Yuhang Ma*</u></strong><sup>†</sup>, Wenting Xu<sup>*</sup>, Chaoyi Zhao<sup>*</sup>, Keqiang Sun, Qinfeng Jin, Zeng Zhao<sup>✉</sup>, Changjie Fan, Zhipeng Hu.
+                            </dd>
+                            <dd>
+                                AAAI 2025
+                            </dd>
+                            <dd>
+                                <a href="https://storynizor.github.io/">[ProjectPage]</a> /
+                                <a href="https://www.arxiv.org/pdf/2409.19624">[Paper]</a> /
+                                <a href="https://github.com/Storynizor/Storynizor">[Code]</a> /
+                            </dd>
+                        </div>
+                    </dl>
+                    <hr>
+
+                    <dl style="min-height:125px; display: flex; align-items: center;">
+                        <dt style="display: flex; align-items: center; justify-content: center; width: 200px;">
+                            <img src="assets/characteradapter/intro.jpg" width="200" height="160" style="margin: 0 10px;">
+                        </dt>
+                        <div style="flex: 1; padding-left: 15px;">
+                            <dt>
+                                Character-Adapter: Prompt-Guided Region Control for High-Fidelity Character Customization
+                            </dt>
+                            <dd>
+                                <strong><u>Yuhang Ma*</u></strong><sup>†</sup>, Wenting Xu<sup>*</sup>, Jiji Tang<sup>*</sup>, Qinfeng Jin, Rongsheng Zhang, Zeng Zhao<sup>✉</sup>, Changjie Fan, Zhipeng Hu.
+                            </dd>
+                            <dd>arXiv 2024 </dd>
+                            <dd>
+                                <a href="https://character-adapter.github.io/">[ProjectPage]</a> /
+                                <a href="https://arxiv.org/abs/2406.16537">[Paper]</a> /
+                                <a href="https://github.com/Character-Adapter/Character-Adapter">[Code]</a>
+                            </dd>
+                        </div>
+                    </dl>
+                    <hr>
+                    
+                    <dl style="min-height:125px; display: flex; align-items: center;">
+                        <dt style="display: flex; align-items: center; justify-content: center; width: 200px;">
+                            <img src="assets/llm4gen/intro-1.jpg" width="200" height="160" style="margin: 0 10px;">
+                        </dt>
+                        <div style="flex: 1; padding-left: 15px;">
+                            <dt>
+                                LLM4GEN: Leveraging Semantic Representation of LLMs for Text-to-Image Generation
+                            </dt>
+                            <dd>
+                                Mushui Liu<sup>*</sup>, <strong><u>Yuhang Ma*</u></strong><sup>†</sup>, Xinfeng Zhang, Zhen Yang, Zeng Zhao<sup>✉</sup>, Bai Liu, Changjie Fan, Zhipeng Hu.
+                            </dd>
+                            <dd>AAAI 2025 </dd>
+                            <dd>
+                                <a href="https://xiaobul.github.io/LLM4GEN/">[ProjectPage]</a> /
+                                <a href="https://arxiv.org/abs/2407.00737">[Paper]</a> /
+                                <a href="https://github.com/YUHANG-Ma/LLM4GEN">[Code]</a>
+                            </dd>
+                        </div>
+                    </dl>
+                    <hr>
+                    
+                    <dl style="min-height:125px; display: flex; align-items: center;">
+                        <dt style="display: flex; align-items: center; justify-content: center; width: 200px;">
+                            <img src="assets/mmtext/intro.jpg" width="200" height="160" style="margin: 0 10px;">
+                        </dt>
+                        <div style="flex: 1; padding-left: 15px;">
+                            <dt>
+                                You Can even Annotate Text with Voice: Transcription-only-Supervised Text Spotting
+                            </dt>
+                            <dd>
+                                Jingqun Tang<sup>*</sup>, Qiao Su<sup>*</sup>, Benlei Cui<sup>*</sup>, <strong><u>Yuhang Ma</u></strong>, Sheng Zhang, Dimitrios Kanoulas.
+                            </dd>
+                            <dd>ACM MM 2022 </dd>
+                            <dd>
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547787">[Paper]</a>
+                            </dd>
+                        </div>
+                    </dl>
+                    <hr>
+
+
+
+
+                    <h2 id="career">Career</h2>
+                    <p>
+                        [05/2022-03/2025] Fuxi AI Lab, NetEase Inc.<br>
+                        [03/2025-Present] Bytedance
+                    </p>
+
+                    <h2 id="career">Hobbies</h2>
+                    <p>
+                        [Werewolves(狼人杀) fanatics, LOL, Piano, Vlogger, a cat person owning 4 cats.
+                    </p>
+
+
+                    
+                </section>
+                <footer class="page__meta"></footer>
+            </div>
+        </article>
     </div>
-
-    <!-- Bio -->
-    <div class="sec-wrapper bio-wrapper" id="bio">
-      <div class="row section-head">
-        <div class="col col-wrapper">
-          <div class="section-title">Biography</div>
-        </div>
-      </div>
-      <div class="row section-item">
-        <div class="col col-wrapper">
-          Yuhang Ma (马宇航) serves as an AI researcher at Bytedance, focusing on <b>conditioned image generation</b>. Previously, she worked at Fuxi AI Lab, NetEase Inc.(2022-2025), responsible for Danqing text-to-image generation model pretraining (Wechat mini app "丹青约"), 
-          Danqing VLM and LLM model fine-tuning and IP Consistency research. 
-          She obtained her master degree from <a href="https://www.ucl.ac.uk/computer-science/">University College London</a> 
-          and bachelor degree from <a href="https://www-en.hnu.edu.cn/info/1095/2093.htm">Hunan University</a>. She studied at <a href="https://www.nus.edu.sg/"> 
-            National University of Singapore</a> as a visit student in 2019 Winnter semester. 
-          
-        </div>
-      </div>
+    <div class="page__footer">
+        <footer>
+            <!-- start custom footer snippets -->
+            <!-- <a href="/sitemap/">Sitemap</a> -->
+            <!-- end custom footer snippets -->
+            <center>
+                
+                <div class="page__footer-copyright">© 2025 Yuhang Ma. Powered by <a href="http://jekyllrb.com/"
+                        rel="nofollow">Jekyll</a> &amp; <a
+                        href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a
+                        href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal
+                        Mistakes</a>.</div>
+            </center>
+        </footer>
     </div>
-    <!-- Bio -->
-
-    <!-- Research -->
-    <div class="sec-wrapper pub-wrapper" id="pub">
-
-      <div class="row section-head">
-        <div class="col-md-auto col-wrapper">
-          <div class="section-title">Publications</div>
-        </div>
-        <div class="col-md section-sub col-wrapper">
-          (* indicates equal contribution, † indicates project leader, <span class="representative">)
-        </div>
-      </div>
-      <!-- begin -->
-      <div class="section-item">
-        <div class="row align-items-center">
-          <div class="col-xs-12 col-md-auto col-wrapper">
-            <div class="figure">
-              <a href="https://arxiv.org/abs/2503.17671">
-                <img src="assets/comfygpt/intro.jpg" alt="[storynizor]">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md col-wrapper">
-            <div class="title">
-              <a href="https://arxiv.org/abs/2503.17671">
-                ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation
-              </a>
-            </div>
-            <div class="authors">
-              <a href="https://scholar.google.com/citations?user=WygzcsIAAAAJ&hl=zh-CN">Oucheng Huang</a><sup>*</sup>, <me>Yuhang Ma<sup>*†</sup></me>, 
-              <a href="https://openreview.net/profile?id=~Zeng_Zhao2">Zeng Zhao</a>, <a href='https://scholar.google.com/citations?user=sbCKwnYAAAAJ&hl=zh-CN&oi=sra'>Mingrui Wu</a>, <a href='https://scholar.google.com/citations?user=xp_rICcAAAAJ&hl=zh-CN&oi=sra'>Jiayi Ji</a>,
-              <a href="https://scholar.google.com.hk/citations?user=H1VQcLAAAAAJ&hl=zh-CN">Rongsheng Zhang</a>,
-              <a href="https://openreview.net/profile?id=~Zhipeng_Hu1">Zhipeng Hu</a>,
-              <a href='https://scholar.google.com/citations?user=KPMK3B4AAAAJ&hl=zh-CN&oi=sra'>Xiaoshuai Sun</a>,
-              <a href='https://scholar.google.com/citations?user=lRSD7PQAAAAJ&hl=zh-CN&oi=sra'>Rongrong Ji</a>
-
-
-            </div>
-            <div class="link">
-              <span class="venue">arxiv 2025</span> /
-              <a href="https://comfygpt.github.io/">ProjectPage</a> /
-              <a href="https://arxiv.org/abs/2503.17671">Paper</a> /
-              <a href="https://github.com/comfygpt/comfygpt">Code</a> /
-              <a data-bs-toggle="collapse" href="#bibtex-comfygpt" onclick="return false">bibtex</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- bibtex -->
-        <div class="collapse" id="bibtex-comfygpt">
-          <div class="row align-items-center">
-            <div class="col col-wrapper">
-              <pre class="snippet">
-<code>@misc{huang2025comfygptselfoptimizingmultiagentcomprehensive,
-  title={ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation}, 
-  author={Oucheng Huang and Yuhang Ma and Zeng Zhao and Mingrui Wu and Jiayi Ji and Rongsheng Zhang and Zhipeng Hu and Xiaoshuai Sun and Rongrong Ji},
-  year={2025},
-  eprint={2503.17671},
-  archivePrefix={arXiv},
-  primaryClass={cs.MA},
-  url={https://arxiv.org/abs/2503.17671}, 
-}
-</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-
-
-
-
-
-      <div class="section-item">
-        <div class="row align-items-center">
-          <div class="col-xs-12 col-md-auto col-wrapper">
-            <div class="figure">
-              <a href="https://arxiv.org/abs/2406.16537">
-                <img src="assets/storynizor/double-result.jpg" alt="[storynizor]">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md col-wrapper">
-            <div class="title">
-              <a href="https://www.arxiv.org/pdf/2409.19624">
-                Storynizor: Consistent Story Generation via Inter-Frame Synchronized and Shuffled ID Injection
-              </a>
-            </div>
-            <div class="authors">
-              <me>Yuhang Ma<sup>*†</sup></me>, Wenting Xu<sup>*</sup>, Chaoyi Zhao<sup>*</sup>, <a href="https://keqiangsun.github.io/">Keqiang Sun</a>, Qinfeng Jin, Zeng Zhao, Changjie Fan, Zhipeng Hu
-            </div>
-            <div class="link">
-              <span class="venue">AAAI 2025</span> /
-              <a href="https://storynizor.github.io/">ProjectPage</a> /
-              <a href="https://www.arxiv.org/pdf/2409.19624">Paper</a> /
-              <a href="https://github.com/Storynizor/Storynizor">Code</a> /
-              <a data-bs-toggle="collapse" href="#bibtex-storynizor" onclick="return false">bibtex</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- bibtex -->
-        <div class="collapse" id="bibtex-storynizor">
-          <div class="row align-items-center">
-            <div class="col col-wrapper">
-              <pre class="snippet">
-<code>@misc{ma2024storynizorconsistentstorygeneration,
-  title={Storynizor: Consistent Story Generation via Inter-Frame Synchronized and Shuffled ID Injection}, 
-  author={Yuhang Ma and Wenting Xu and Chaoyi Zhao and Keqiang Sun and Qinfeng Jin and Zeng Zhao and Changjie Fan and Zhipeng Hu},
-  year={2024},
-  eprint={2409.19624},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2409.19624}, 
-}
-</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-
-
-      <!-- begin -->
-      <div class="section-item">
-        <div class="row align-items-center">
-          <div class="col-xs-12 col-md-auto col-wrapper">
-            <div class="figure">
-              <a href="https://arxiv.org/abs/2406.16537">
-                <img src="assets/characteradapter/intro.jpg" alt="[characteradapter]">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md col-wrapper">
-            <div class="title">
-              <a href="https://arxiv.org/abs/2406.16537">
-                Character-Adapter: Prompt-Guided Region Control for High-Fidelity Character Customization
-              </a>
-            </div>
-            <div class="authors">
-              <me>Yuhang Ma<sup>*†</sup></me>, Wenting Xu<sup>*</sup>, Jiji Tang<sup>*</sup>, Qinfeng Jin, Rongsheng Zhang, Zeng Zhao, Changjie Fan, Zhipeng Hu
-            </div>
-            <div class="link">
-              <span class="venue">arxiv 2024</span> /
-              <a href="https://character-adapter.github.io/">ProjectPage</a> /
-              <a href="https://arxiv.org/abs/2406.16537">Paper</a> /
-              <a href="https://github.com/Character-Adapter/Character-Adapter">Code</a> /
-              <a data-bs-toggle="collapse" href="#bibtex-characteradapter" onclick="return false">bibtex</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- bibtex -->
-        <div class="collapse" id="bibtex-characteradapter">
-          <div class="row align-items-center">
-            <div class="col col-wrapper">
-              <pre class="snippet">
-<code>@misc{ma2024characteradapterpromptguidedregioncontrol,
-  title={Character-Adapter: Prompt-Guided Region Control for High-Fidelity Character Customization}, 
-  author={Yuhang Ma and Wenting Xu and Jiji Tang and Qinfeng Jin and Rongsheng Zhang and Zeng Zhao and Changjie Fan and Zhipeng Hu},
-  year={2024},
-  eprint={2406.16537},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2406.16537}, 
-}
-</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-
-      <!-- begin -->
-      <div class="section-item">
-        <div class="row align-items-center">
-          <div class="col-xs-12 col-md-auto col-wrapper">
-            <div class="figure">
-              <a href="https://arxiv.org/abs/2407.00737">
-                <img src="assets/llm4gen/intro-1.jpg" alt="[llm4gen]">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md col-wrapper">
-            <div class="title">
-              <a href="https://arxiv.org/abs/2407.00737">
-                LLM4GEN: Leveraging Semantic Representation of LLMs for Text-to-Image Generation
-              </a>
-            </div>
-            <div class="authors">
-              Mushui Liu<sup>*</sup>,
-              <me>Yuhang Ma<sup>*†</sup></me>, Xinfeng Zhang, Zhen Yang, Zeng Zhao, Bai Liu, Changjie Fan, Zhipeng Hu
-              
-            </div>
-            <div class="link">
-              <span class="venue">AAAI 2025</a></span> /
-              <a href="https://xiaobul.github.io/LLM4GEN/">ProjectPage</a> /
-              <a href="https://arxiv.org/abs/2407.00737">Paper</a> /
-              <a href="https://github.com/YUHANG-Ma/LLM4GEN">Code</a> /
-              <a data-bs-toggle="collapse" href="#bibtex-llm4gen" onclick="return false">bibtex</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- bibtex -->
-        <div class="collapse" id="bibtex-llm4gen">
-          <div class="row align-items-center">
-            <div class="col col-wrapper">
-              <pre class="snippet">
-<code>@misc{liu2024llm4genleveragingsemanticrepresentation,
-  title={LLM4GEN: Leveraging Semantic Representation of LLMs for Text-to-Image Generation}, 
-  author={Mushui Liu and Yuhang Ma and Xinfeng Zhang and Yang Zhen and Zeng Zhao and Zhipeng Hu and Bai Liu and Changjie Fan},
-  year={2024},
-  eprint={2407.00737},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2407.00737}, 
-}</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-
-      <!-- begin -->
-      <div class="section-item">
-        <div class="row align-items-center">
-          <div class="col-xs-12 col-md-auto col-wrapper">
-            <div class="figure">
-              <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547787">
-                <img src="assets/mmtext/intro.jpg" alt="[mmtext]">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md col-wrapper">
-            <div class="title">
-              <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547787">
-                You Can even Annotate Text with Voice: Transcription-only-Supervised Text Spotting
-              </a>
-            </div>
-            <div class="authors">
-              Jingqun Tang<sup>*</sup>, Qiao Su<sup>*</sup>, Benlei Cui<sup>*</sup>,
-              <me>Yuhang Ma</me>, Sheng Zhang, Dimitrios Kanoulas
-            </div>
-            <div class="link">
-              <span class="venue"><a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547787">ACM MM 2022</a></span> /
-              <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547787">Paper</a> /
-              <a data-bs-toggle="collapse" href="#bibtex-mmtext" onclick="return false">bibtex</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- bibtex -->
-        <div class="collapse" id="bibtex-mmtext">
-          <div class="row align-items-center">
-            <div class="col col-wrapper">
-              <pre class="snippet">
-<code>@inproceedings{tang2022you,
-  title={You can even annotate text with voice: Transcription-only-supervised text spotting},
-  author={Tang, Jingqun and Qiao, Su and Cui, Benlei and Ma, Yuhang and Zhang, Sheng and Kanoulas, Dimitrios},
-  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
-  pages={4154--4163},
-  year={2022}
-}</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-
-
-  <!-- </div>
-  <div class="sec-wrapper bio-wrapper" id="bio">
-    <div class="row section-head">
-      <div class="col col-wrapper">
-        <div class="section-title">Activities</div>
-      </div>
-    </div>
-    <div class="row section-item">
-      <div class="col col-wrapper">
-        [07/2024] Danqing text-to-image generation model trained by me is open to public on <a>href="https://www.worldaic.com.cn/" 2024 World AI Conference </a>
-        
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<div class="sec-wrapper bio-wrapper" id="bio">
-  <div class="row section-head">
-    <div class="col col-wrapper">
-      <div class="section-title">Career</div>
-    </div>
-  </div>
-  <div class="row section-item">
-    <div class="col col-wrapper">
-      [05/2022-03/2025] Fuxi AI Lab, NetEase Inc.<br>
-      [03/2025-Present] Bytedance
-    </div>
-  </div>
-</div>
-
-<div class="sec-wrapper bio-wrapper" id="bio">
-  <div class="row section-head">
-    <div class="col col-wrapper">
-      <div class="section-title">Hobbies</div>
-    </div>
-  </div>
-  <div class="row section-item">
-    <div class="col col-wrapper">
-      Werewolves(狼人杀) fanatics, LOL, Piano, Vlogger, a cat person owning 4 cats.
-    </div>
-  </div>
-</div>
-<div class="sec-wrapper bio-wrapper" id="bio">
-  <div class="row section-head">
-    <div class="col col-wrapper">
-      <div class="section-title"></div>
-    </div>
-  </div>
-  <div class="row section-item">
-    <div class="col col-wrapper">
-      
-    </div>
-  </div>
-</div>
- <!-- Optional JavaScript -->
-    <!-- jQuery first, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <!-- Popper before Bootstrap -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="js/script.js"></script>
+    <script src="home/main.js"></script>
+    <script> (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', '', 'auto'); ga('send', 'pageview'); </script>
+    <div class="jvectormap-tip"></div>
 </body>
-
 
 </html>
